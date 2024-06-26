@@ -1,0 +1,2 @@
+## about Frost
+### Frost is a dependency injection framework designed to simplify the implementation of the Inversion of Control (IoC) principle. By utilizing annotations, Frost enables the instantiation of user-defined classes as singleton objects, which are then managed by the application Context.
