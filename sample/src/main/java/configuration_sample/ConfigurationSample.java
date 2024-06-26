@@ -8,14 +8,8 @@ public class ConfigurationSample {
 
     }
 
-    public PrinterContainer printerContainer() {
-        HelloWorldPrinter helloWorldPrinter = new HelloWorldPrinter();
-        PrinterContainer printerContainer = new PrinterContainer(helloWorldPrinter);
-        return printerContainer;
-    }
-
-
-
-
+     public Printer goodByeWorld() {
+        return new GoodByeWorldPrinter();
+     }
 
 }

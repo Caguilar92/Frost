@@ -1,5 +1,8 @@
 package configuration_sample;
 
+import frost.container.Annotations.ManagedComponent;
+
+@ManagedComponent
 public class PrinterContainer {
 
     private Printer printer;

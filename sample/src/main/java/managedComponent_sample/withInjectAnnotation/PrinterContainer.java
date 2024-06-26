@@ -6,16 +6,18 @@ import frost.container.Annotations.ManagedComponent;
 public class PrinterContainer {
 
     private Printer helloWorldPrinter;
-    private Printer goodByeWorldPrinter;
+    private Printer goodbyeWorldPrinter;
 
    @Inject(implementations = {HelloWorldPrinter.class,GoodByeWorldPrinter.class})
-    public PrinterContainer(Printer helloWorld, Printer goodbyeWorldPrinter ) {
+    public PrinterContainer(Printer helloWorld, Printer goodbyeWorldPrinter) {
        this.helloWorldPrinter = helloWorld;
-       this.goodByeWorldPrinter = goodbyeWorldPrinter;
+       this.goodbyeWorldPrinter = goodbyeWorldPrinter;
+
    }
 
     public void printMesssage() {
        helloWorldPrinter.print();
-       goodByeWorldPrinter.print();
+       goodbyeWorldPrinter.print();
+
     }
 }
